@@ -12,6 +12,11 @@ docker run \
     service.nomad
 ```
 
+## Dockerhub
+You can find the images on Dockerhub https://hub.docker.com/r/hendrikmaus/nomad-cli/
+
+> The `latest` tag should always be nomad stable; please open an issue if I missed to update
+
 ## Build
 
 ```bash
