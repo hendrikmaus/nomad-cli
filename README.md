@@ -25,3 +25,7 @@ You can find the images on Dockerhub https://hub.docker.com/r/hendrikmaus/nomad-
 ```
 
 > You can find all releases and checksums at https://releases.hashicorp.com/nomad/
+
+## Contribution
+
+I am more than happy to accept any help in further automating and improving this.
