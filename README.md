@@ -15,5 +15,8 @@ docker run \
 ## Build
 
 ```bash
+# linux_amd64 checksum
 ./build.sh -version 0.6.3 -sha256 908ee049bda380dc931be2c8dc905e41b58e59f68715dce896d69417381b1f4e
 ```
+
+> You can find all releases and checksums at https://releases.hashicorp.com/nomad/
