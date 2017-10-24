@@ -27,8 +27,6 @@ if [[ -z $nomad_sha256 ]]; then
     exit 1
 fi
 
-NOMAD_VERSION=0.7.0-rc1
-NOMAD_SHA256=c772187901de20075a20de473e87299358dd6dbf451fc2d45ebe93533c3e6158
 docker build \
     --build-arg arg_nomad_version=$nomad_version \
     --build-arg arg_nomad_sha256=$nomad_sha256 \
