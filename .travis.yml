@@ -1,4 +1,6 @@
 language: python
+python:
+  - "3.6"
 
 sudo: required
 
@@ -7,6 +9,9 @@ services:
 
 before_install:
   - docker login -u="$DOCKERHUB_USERNAME" -p="$DOCKERHUB_PASSWORD"
+
+install:
+  - pip install -r requirements.txt
 
 jobs:
   include:
