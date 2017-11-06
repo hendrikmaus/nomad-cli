@@ -56,7 +56,7 @@ for v in result.items():
             stable_detected = True
             logging.info('"{}": seems to be latest stable'.format(v[0]))
             call(['/usr/local/bin/docker', 'tag',
-                  '{}:{}'.format(image_name, v[0]), '{}}:{}'.format(image_name, "latest")])
+                  '{}:{}'.format(image_name, v[0]), '{}:{}'.format(image_name, "latest")])
             call(['/usr/local/bin/docker', 'push',
                   '{}:{}'.format(image_name, "latest")])
             continue
