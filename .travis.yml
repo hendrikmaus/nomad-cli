@@ -9,7 +9,6 @@ services:
   - docker
 
 before_install:
-  - sbt docker:publishLocal;
   - docker login -u="${DOCKERHUB_USERNAME}" -p="${DOCKERHUB_PASSWORD}"
 
 install:
