@@ -15,9 +15,14 @@ docker run \
 ## Dockerhub
 You can find the images on Dockerhub https://hub.docker.com/r/hendrikmaus/nomad-cli/
 
-> The `latest` tag should always be nomad stable; please open an issue if I missed to update
+> The `latest` tag should always be nomad stable; please open an issue if I missed to update (see travis build for details, it logs what is considered stable)
 
 ## Build
+
+### Automatic Daily Build
+All versions >= 0.6.0 are built and pushed daily using [Travis CI](https://travis-ci.org/hendrikmaus/nomad-cli)
+
+### Manual Build
 
 ```bash
 # linux_amd64 checksum
