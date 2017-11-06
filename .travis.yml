@@ -1,14 +1,15 @@
+sudo: required
+
 language: python
+
 python:
   - "3.6"
-
-sudo: required
 
 services:
   - docker
 
 before_install:
-  - docker login -u="$DOCKERHUB_USERNAME" -p="$DOCKERHUB_PASSWORD"
+  - docker login -u="${DOCKERHUB_USERNAME}" -p="${DOCKERHUB_PASSWORD}"
 
 install:
   - pip install -r requirements.txt
@@ -16,5 +17,4 @@ install:
 jobs:
   include:
     - stage: build
-      script: docker 
       script: ./build-and-push.py
