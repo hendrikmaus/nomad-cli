@@ -46,7 +46,7 @@ for v in result.items():
     logging.info('"{}": building Docker image...'.format(v[0]))
     call(['./build.sh', '-version', v[0], '-sha256', v[1]])
     logging.info('"{}": pushing...'.format(v[0]))
-    call(['/usr/local/bin/docker', 'push', '{}:{}'.format(image_name, v[0])])
+    call(['docker', 'push', '{}:{}'.format(image_name, v[0])])
 
     # build and push stable
     # the first version without any dash must be latest stable
@@ -55,9 +55,9 @@ for v in result.items():
         if version_parts['prerelease'] is None:
             stable_detected = True
             logging.info('"{}": seems to be latest stable'.format(v[0]))
-            call(['/usr/local/bin/docker', 'tag',
+            call(['docker', 'tag',
                   '{}:{}'.format(image_name, v[0]), '{}:{}'.format(image_name, "latest")])
-            call(['/usr/local/bin/docker', 'push',
+            call(['docker', 'push',
                   '{}:{}'.format(image_name, "latest")])
             continue
 
