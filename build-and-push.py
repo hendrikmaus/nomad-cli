@@ -13,7 +13,7 @@ logging.info('Using base URL "{}"'.format(base_url))
 logging.info('Retrieving list of releases...')
 releases = requests.get(base_url)
 soup = BeautifulSoup(releases.text, 'html.parser')
-min_version = ">=0.6.0"
+min_version = ">=1.0.0"
 logging.info('Minimum version is set to "{}"; everything below is going to be ignored...'.format(min_version))
 image_name = 'hendrikmaus/nomad-cli'
 result = {}
