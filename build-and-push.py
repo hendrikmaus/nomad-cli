@@ -22,6 +22,8 @@ for link in soup.find_all('a'):
     href = link.get('href')
     if href.startswith('/nomad') == False:
         continue
+    if href.endswith('+ent/') == True:
+        continue
     version = href.split('/')[2]
     if not semver.match(version, min_version):
         logging.info('"{}": too old, skipping...'.format(version))
