@@ -1,0 +1,13 @@
+name: Build and Push
+
+on:
+  schedule:
+    # run every day at 1730 hours
+    - cron:  '30 17 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-20.01
+    steps:
+      - run: echo "implement me"
