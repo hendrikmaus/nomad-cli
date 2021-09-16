@@ -20,7 +20,7 @@ You can find the images on Dockerhub https://hub.docker.com/r/hendrikmaus/nomad-
 ## Build
 
 ### Automatic Daily Build
-All versions >= 0.6.0 are built and pushed daily using [Travis CI](https://travis-ci.org/hendrikmaus/nomad-cli)
+Currently disabled.
 
 ### Manual Build
 
