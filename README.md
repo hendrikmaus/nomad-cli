@@ -20,7 +20,7 @@ You can find the images on Dockerhub https://hub.docker.com/r/hendrikmaus/nomad-
 ## Build
 
 ### Automatic Daily Build
-Currently disabled.
+GitHub Actions runs every day at 1730 hours.
 
 ### Manual Build
 
