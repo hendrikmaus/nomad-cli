@@ -26,7 +26,7 @@ GitHub Actions runs every day at 1730 hours.
 
 ```bash
 # linux_amd64 checksum
-./build.sh -version 0.6.3 -sha256 908ee049bda380dc931be2c8dc905e41b58e59f68715dce896d69417381b1f4e
+./build.sh -version 1.1.4 -sha256 735790c3664f89dfcc3cadfec8c421d812b00516425ca5aa186b58b82c6f3e1f
 ```
 
 > You can find all releases and checksums at https://releases.hashicorp.com/nomad/
