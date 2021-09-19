@@ -15,7 +15,7 @@ docker run \
 ## Dockerhub
 You can find the images on Dockerhub https://hub.docker.com/r/hendrikmaus/nomad-cli/
 
-> The `latest` tag should always be nomad stable; please open an issue if I missed to update (see travis build for details, it logs what is considered stable)
+> The `latest` tag should always be nomad stable; please open an issue if I missed to update.
 
 ## Build
 
