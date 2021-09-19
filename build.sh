@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -euo pipefail
 
 for arg in "$@" ; do
     case "$arg" in
