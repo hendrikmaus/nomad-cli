@@ -30,7 +30,7 @@
 - Now test the container image by listing servers:
 
   ```shell
-  docker run --rm --network=host hendrikmaus/nomad-cli:dev-snapshot nomad node status -address=http://127.0.0.1:4646
+  docker run --rm --network=host hendrikmaus/nomad-cli nomad node status -address=http://127.0.0.1:4646
   ```
 - Logout of the VM and destroy it:
   
