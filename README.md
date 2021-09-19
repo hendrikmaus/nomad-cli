@@ -1,6 +1,8 @@
 # nomad-cli
 Docker image with [Nomad](https://github.com/hashicorp/nomad) inside of it to be used as CLI tool.
 
+*This image is **unofficial** and not intended to run Nomad agents; it is supposed to be a utility container for deployment pipelines.*
+
 ## Usage
 
 ```bash
