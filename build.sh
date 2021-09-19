@@ -30,5 +30,6 @@ fi
 docker build \
     --build-arg arg_nomad_version=$nomad_version \
     --build-arg arg_nomad_sha256=$nomad_sha256 \
+    --progress plain \
     -t hendrikmaus/nomad-cli:$nomad_version \
     .
