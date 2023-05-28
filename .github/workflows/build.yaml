@@ -20,4 +20,5 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
       - run: |
           pip install -r requirements.txt
-          ./build-and-push.py
+          ./build.sh -version 1.5.5 -sha256 edbebdf105daf556a1f9e9b40d58eaa6a0984de52ec87c8900687f9d98465b84
+
