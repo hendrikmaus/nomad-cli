@@ -1,10 +1,7 @@
 name: Build and Push
 
 on:
-  schedule:
-    # run every day at 1730 hours
-    - cron:  '30 17 * * *'
-  workflow_dispatch:
+  push:
 
 jobs:
   build:
@@ -19,6 +16,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - run: |
-          pip install -r requirements.txt
-          ./build.sh -version 1.5.5 -sha256 edbebdf105daf556a1f9e9b40d58eaa6a0984de52ec87c8900687f9d98465b84
+          wget --output-document nomad-1.5.6.tar.gz https://github.com/hashicorp/nomad/archive/v1.5.6.tar.gz
+          docker build --tag hendrikmaus/nomad-cli:1.5.6-testbuild .
+          docker push hendrikmaus/nomad-cli:1.5.6-testbuild
 
