@@ -1,7 +1,5 @@
 FROM docker:latest 
 
-MAINTAINER Hendrik Maus <hendrik.maus@trivago.com>
-
 ENV GLIBC_VERSION "2.32-r0"
 
 RUN set -x \
